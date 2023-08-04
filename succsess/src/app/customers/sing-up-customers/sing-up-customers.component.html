@@ -1,0 +1,171 @@
+<form>
+<div class="container">
+  <h3 class="text-center">Registro de Clientes</h3>
+  <h5>Datos Personales:</h5>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label>Nombre</label>
+      <input
+        class="form-control border border-primary"
+        type="text"
+        placeholder="Nombres"
+      />
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label>Apellidos</label>
+      <input
+        class="form-control border border-primary"
+        type="text"
+        placeholder="Apellidos"
+      />
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label>Genero</label>
+      <select
+        class="form-select border border-primary"
+        aria-label="Default select Example"
+      >
+        <option selected>Masculino</option>
+        <option value="1">Femenino</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label>Fecha de Nacimiento</label>
+      <input
+        class="form-control border border-primary"
+        type="date"
+        placeholder="Fecha de Nacimiento"
+      />
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label>Documento de Identidad</label>
+      <input
+        class="form-control border border-primary"
+        type="text"
+        placeholder="Numero de DPI"
+      />
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label>Correo Electronico</label>
+      <input
+        class="form-control border border-primary"
+        type="email"
+        placeholder="Correo Electronico"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label>Direccion</label>
+      <input
+        class="form-control border border-primary"
+        type="text"
+        placeholder="Direccion"
+      />
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label>Telefono</label>
+      <input
+        class="form-control border border-primary"
+        type="text"
+        placeholder="Telefono"
+      />
+    </div>
+    <div class="col-md-4 mb-3">
+      <label>Nit</label>
+      <input
+        class="form-control border border-primary"
+        type="text"
+        placeholder="Nit tributario"
+      />
+    </div>
+  </div>
+</div>
+
+<!--Seccion para los datos del paquete contratado-->
+<div class="container">
+  <h5>Datos del Servicio:</h5>
+</div>
+
+<div class="container">
+  <!--section 1-->
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label>Paquete contratado</label>
+      <select
+        class="form-select border border-primary"
+        aria-label="Default select Example">
+        <option selected>Basico (5Mbps)</option>
+        <option value="1">Ideal (7Mbps)</option>
+        <option value="2">Premium (9Mbps)</option>
+      </select>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label>Modelo de Router</label>
+      <select
+        class="form-select border border-primary"
+        aria-label="Default select Example">
+        <option selected>Tenda (F6)</option>
+        <option value="1">Tenda (N301)</option>
+        <option value="2">Otra marca</option>
+      </select>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label>Modelo de antena (CPE)</label>
+      <select
+        class="form-select border border-primary"
+        aria-label="Default select Example">
+        <option selected> SXT_SQLITE 5</option>
+        <option value="1"> SXT_SQLITE 5 AC</option>
+        <option value="2">SXT_SQLITE 5 HIGH POWER</option>
+        <option value="3">RBDISC AC</option>
+        <option value="4">LGH5</option>
+        <option value="5"></option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--section two-->
+    <div class="col-md-4 mb-3">
+      <label>IP asignada</label>
+      <input
+        class="form-control border border-primary"
+        type="number"
+        placeholder="@Example 192.168.0.1"
+      />
+    </div>
+    <div class="col-md-4 mb-3">
+      <label>Contraseña asignada</label>
+      <input
+        class="form-control border border-primary"
+        type="text"
+        placeholder="Contraseña"
+      />
+    </div>
+    <div class="col-md-4 mb-3">
+      <label>Fecha de Instalacion</label>
+      <input
+        class="form-control border border-primary"
+        type="date"
+        placeholder="Fecha de Instalacion"
+      />
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-center mt-3">
+<button class="btn btn-primary d-grid" type="submit">REGISTRAR</button>
+</div>
+</form>

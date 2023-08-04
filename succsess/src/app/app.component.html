@@ -1,0 +1,16 @@
+<div class="d-flex m-2 p-1 vh-100">
+  <div class="col-2 d-flex flex-column">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="col d-flex flex-column vh-100 custom-left-margin">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- Path: succsess\src\app\app.component.css -->
+<style>
+  .custom-left-margin{
+    margin-left: 10px;
+  }
+</style>

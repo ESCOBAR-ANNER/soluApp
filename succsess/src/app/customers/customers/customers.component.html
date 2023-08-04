@@ -1,0 +1,32 @@
+<div class="d-flex">
+  <form class="d-flex col-10" role="search">
+    <input
+      class="form-control me-2"
+      type="search"
+      placeholder="Buscar Cliente"
+      arial-label="search"
+    />
+    <button type="submit" class="btn btn-outline-success">Buscar</button>
+  </form>
+  <button
+    (click)="showComponent()"
+    type="submit"
+    class="btn btn-outline-primary custom-left-margin"
+    routerLink="/Registro"
+  >
+    Registro
+  </button>
+</div>
+<div *ngIf="showComponentes">
+  <app-sing-up-customers></app-sing-up-customers>
+</div>
+<div *ngIf="!showComponentes">
+  <app-customer-search></app-customer-search>
+</div>
+
+<!--Estilos css-->
+<style>
+  .custom-left-margin {
+    margin-left: 10px;
+  }
+</style>

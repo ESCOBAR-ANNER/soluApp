@@ -1,0 +1,31 @@
+
+
+<hr />
+<div class="table-responsive">
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Direccion</th>
+        <th>Telefono</th>
+        <th>Coordenadas</th>
+        <th>Correo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let customer of arrayCustomers">
+        <td>{{ customer.firsName }} {{ customer.lastName }}</td>
+        <td>{{ customer.age }}</td>
+        <td>{{ customer.address }}</td>
+        <td>{{ customer.phone }}</td>
+        <td>{{ customer.coordinates }}</td>
+        <td>{{ customer.email }}</td>
+        <td>Eliminar/Modificar</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

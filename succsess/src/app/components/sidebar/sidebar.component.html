@@ -1,0 +1,10 @@
+<div class="bg-dark p-3 vh-100">
+  <ul class="list-group">
+    <h4 class="text-white text-center">MENU</h4>
+    <li *ngFor="let item of arraySidebar">
+      <a [routerLink]="['/', item]" class="list-group-item bg-dark text-white">
+        {{ item }}
+      </a>
+    </li>
+  </ul>
+</div>
